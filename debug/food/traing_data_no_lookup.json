@@ -1,0 +1,310 @@
+[
+  {
+    "intent": "restaurant_search",
+    "entities": [
+      {
+        "start": 18,
+        "end": 23,
+        "value": "sushi",
+        "entity": "food"
+      }
+    ],
+    "text": "i'm looking for a sushi place to eat"
+  },
+  {
+    "intent": "restaurant_search",
+    "text": "anywhere in the west"
+  },
+  {
+    "intent": "restaurant_search",
+    "entities": [
+      {
+        "start": 15,
+        "end": 20,
+        "value": "tacos",
+        "entity": "food"
+      }
+    ],
+    "text": "I want to grab tacos"
+  },
+  {
+    "intent": "restaurant_search",
+    "text": "Let's get something to eat."
+  },
+  {
+    "intent": "restaurant_search",
+    "text": "I am searching for a place nearby"
+  },
+  {
+    "intent": "restaurant_search",
+    "text": "i'm looking for a place in the north of town"
+  },
+  {
+    "intent": "restaurant_search",
+    "entities": [
+      {
+        "start": 43,
+        "end": 55,
+        "value": "chana masala",
+        "entity": "food"
+      }
+    ],
+    "text": "show me a mexican place in the centre with chana masala my favorite food"
+  },
+  {
+    "intent": "restaurant_search",
+    "text": "i am looking for an indian spot called olaolaolaolaolaola"
+  },
+  {
+    "intent": "restaurant_search",
+    "text": "search for restaurants"
+  },
+  {
+    "intent": "restaurant_search",
+    "text": "anywhere near 18328"
+  },
+  {
+    "intent": "restaurant_search",
+    "text": "I want something spicays."
+  },
+  {
+    "intent": "restaurant_search",
+    "text": "Give me something with a good attitude."
+  },
+  {
+    "intent": "restaurant_search",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "Fish",
+        "entity": "food"
+      }
+    ],
+    "text": "Fish is on the menu?"
+  },
+  {
+    "intent": "restaurant_search",
+    "entities": [
+      {
+        "start": 13,
+        "end": 20,
+        "value": "sausage",
+        "entity": "food"
+      }
+    ],
+    "text": "what kind of sausage do they have?"
+  },
+  {
+    "intent": "restaurant_search",
+    "text": "Where is the closest restaurant?"
+  },
+  {
+    "intent": "restaurant_search",
+    "text": "I love you bot"
+  },
+  {
+    "intent": "restaurant_search",
+    "entities": [
+      {
+        "start": 26,
+        "end": 34,
+        "value": "empanada",
+        "entity": "food"
+      }
+    ],
+    "text": "Could you help me find an empanada place?"
+  },
+  {
+    "intent": "restaurant_search",
+    "entities": [
+      {
+        "start": 18,
+        "end": 25,
+        "value": "chicken",
+        "entity": "food"
+      }
+    ],
+    "text": "Do you have fried chicken?"
+  },
+  {
+    "intent": "restaurant_search",
+    "text": "Help me out here."
+  },
+  {
+    "intent": "restaurant_search",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Bagels",
+        "entity": "food"
+      }
+    ],
+    "text": "Bagels are yum town"
+  },
+  {
+    "intent": "restaurant_search",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "bagels",
+        "entity": "food"
+      }
+    ],
+    "text": "bagels"
+  },
+  {
+    "intent": "restaurant_search",
+    "text": "not"
+  },
+  {
+    "intent": "restaurant_search",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "fish",
+        "entity": "food"
+      }
+    ],
+    "text": "fish"
+  },
+  {
+    "intent": "restaurant_search",
+    "text": "also not"
+  },
+  {
+    "intent": "restaurant_search",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "tacos",
+        "entity": "food"
+      }
+    ],
+    "text": "tacos"
+  },
+  {
+    "intent": "restaurant_search",
+    "text": "just a random thing"
+  },
+  {
+    "intent": "restaurant_search",
+    "entities": [
+      {
+        "start": 9,
+        "end": 17,
+        "value": "zucchini",
+        "entity": "food"
+      }
+    ],
+    "text": "I want a zucchini place"
+  },
+  {
+    "intent": "restaurant_search",
+    "text": "How are things going in your life."
+  },
+  {
+    "intent": "restaurant_search",
+    "text": "What time is lunch."
+  },
+  {
+    "intent": "restaurant_search",
+    "entities": [
+      {
+        "start": 12,
+        "end": 17,
+        "value": "salad",
+        "entity": "food"
+      }
+    ],
+    "text": "Will we get salad delivered?"
+  },
+  {
+    "intent": "restaurant_search",
+    "entities": [
+      {
+        "start": 31,
+        "end": 38,
+        "value": "mexican",
+        "entity": "food"
+      }
+    ],
+    "text": "What is the best place to find mexican"
+  },
+  {
+    "intent": "restaurant_search",
+    "entities": [
+      {
+        "start": 30,
+        "end": 35,
+        "value": "pasta",
+        "entity": "food"
+      }
+    ],
+    "text": "Do you know where the nearest pasta place is?"
+  },
+  {
+    "intent": "restaurant_search",
+    "entities": [
+      {
+        "start": 21,
+        "end": 25,
+        "value": "beef",
+        "entity": "food"
+      }
+    ],
+    "text": "I am hungry for some beef"
+  },
+  {
+    "intent": "restaurant_search",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "Indian",
+        "entity": "food"
+      }
+    ],
+    "text": "Indian please"
+  },
+  {
+    "intent": "restaurant_search",
+    "entities": [
+      {
+        "start": 15,
+        "end": 20,
+        "value": "bagel",
+        "entity": "food"
+      },
+      {
+        "start": 26,
+        "end": 38,
+        "value": "cream cheese",
+        "entity": "food"
+      },
+      {
+        "start": 43,
+        "end": 48,
+        "value": "lochs",
+        "entity": "food"
+      }
+    ],
+    "text": "I would like a bagel with cream cheese and lochs."
+  },
+  {
+    "intent": "restaurant_search",
+    "entities": [
+      {
+        "start": 30,
+        "end": 34,
+        "value": "salt",
+        "entity": "food"
+      }
+    ],
+    "text": "Do you have something without salt?"
+  }
+]

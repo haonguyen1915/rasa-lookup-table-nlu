@@ -1,10 +1,10 @@
 language: "en"
 
 pipeline:
-- name: "nlp_spacy"
-- name: "tokenizer_spacy"
-- name: "intent_entity_featurizer_regex"
-- name: "ner_crf"
+- name: "SpacyNLP"
+- name: "SpacyTokenizer"
+- name: "RegexFeaturizer"
+- name: "CRFEntityExtractor"
   features: [
               ["low", "title", "upper"],
               ["bias", "upper", "title", "digit", "pattern"],
