@@ -125,7 +125,7 @@ def run_demo(key="food", disp_bar=True):
     # model_loc =
     # print(model_dir)
     evaluate_model = EvaluateModel(test_data, model_test_dir)
-    evaluate_model.plot_confussion_matrix_intents()
+    evaluate_model.evaluate_entities()
     # show_dict(result)
     # get the metrics
     metric_list = strip_metrics(key)
