@@ -26,7 +26,7 @@ def load_file(fname="data/combined_new.csv"):
 
 
 def prep_data(df):
-    print("\nsplitting into test and train...")
+    print("\nsplitting into test_lookup and train...")
     df_x = df["word"].values.astype("U")
     df_y = df["label"].values.astype("U")
     x_train, x_test, y_train, y_test = train_test_split(

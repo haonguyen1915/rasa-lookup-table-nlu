@@ -44,7 +44,7 @@ def train_model(td_file, config_file, model_dir):
 
 
 def train_test(td_file, config_file, model_dir):
-    # helper function to split into test and train and evaluate on results.
+    # helper function to split into test_lookup and train and evaluate on results.
 
     td = load_data(td_file)
     trainer = Trainer(config.load(config_file))
@@ -168,7 +168,7 @@ def display_metrics(metrics):
 
 
 def plot_metrics(metric_list, save_path=None):
-    # runs through each test case and adds a set of bars to a plot.  Saves
+    # runs through each test_lookup case and adds a set of bars to a plot.  Saves
 
     f, (ax1) = plt.subplots(1, 1)
     plt.grid(True)

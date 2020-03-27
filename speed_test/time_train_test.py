@@ -133,7 +133,7 @@ def print_stats(
     print("    took {} sec. to load training data".format(td_load_time))
     print("    took {} sec. to train model".format(train_time))
     print("    took {} sec. to perist model".format(persist_time))
-    print("    took {} sec. to evaluate on test set".format(eval_time))
+    print("    took {} sec. to evaluate on test_lookup set".format(eval_time))
     print("    took {} sec. total".format(total_time))
 
 

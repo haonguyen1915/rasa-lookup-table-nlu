@@ -46,7 +46,7 @@ def train_model(td_file, config_file, model_dir):
 
 def train_test(td_file, config_file, model_dir, key="company", noise=0.1):
     """trains a model using the training data
-       (split into train-test) and config"""
+       (split into train-test_lookup) and config"""
     td = load_data(td_file)
 
     trainer = Trainer(config.load(config_file))

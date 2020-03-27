@@ -3,6 +3,7 @@ from rasa.nlu.model import Trainer
 from rasa.nlu import config
 from rasa.nlu.test import run_evaluation, cross_validate
 from haolib import *
+from haolib.lib_rasa.evaluation import EvaluateModel
 import logging
 import re
 
@@ -29,7 +30,7 @@ See the README.md for more information.
 
 DEMO_KEYS = ["food", "company"]
 
-
+model_test_dir = "models/food/nlu_20200326-211321"
 def train_model(td_file, config_file, model_dir):
     # trains a model using the training data and config
 
@@ -48,7 +49,7 @@ def train_model(td_file, config_file, model_dir):
 
 
 def train_test(td_file, config_file, model_dir):
-    # helper function to split into test and train and evaluate on results.
+    # helper function to split into test_lookup and train and evaluate on results.
 
     td = load_data(td_file)
     trainer = Trainer(config.load(config_file))
@@ -70,11 +71,10 @@ def CV_eval(td_file, config_file, Nfolds=10):
     cross_validate(td, Nfolds, configuration)
 
 
-def evaluate_model(td_file, model_loc):
-    # evaluates the model on the training data
-    # wrapper for rasa_nlu.evaluate.run_evaluation
-
-    return run_evaluation(td_file, model_loc)
+# def evaluate_model(td_file, model_loc):
+#     # evaluates the model on the training data
+#     # wrapper for rasa_nlu.evaluate.run_evaluation
+#     return run_evaluation(td_file, model_loc)
 
 
 def get_path_dicts(key):
@@ -121,12 +121,14 @@ def run_demo(key="food", disp_bar=True):
 
 
     # run with the lookup table
-    model_loc = train_model(training_data_lookup, config_file, model_dir)
+    # train_model(training_data_lookup, config_file, model_dir)
     # model_loc =
-    result = evaluate_model(test_data, model_loc)
-    show_dict(result)
+    # print(model_dir)
+    evaluate_model = EvaluateModel(test_data, model_test_dir)
+    evaluate_model.plot_confussion_matrix_intents()
+    # show_dict(result)
     # get the metrics
-    # metric_list = strip_metrics(key)
+    metric_list = strip_metrics(key)
 
     # either print or plot them
     # if disp_bar:
@@ -176,7 +178,7 @@ def display_metrics(metrics):
 
 
 def plot_metrics(metric_list, save_path=None):
-    # runs through each test case and adds a set of bars to a plot.  Saves
+    # runs through each test_lookup case and adds a set of bars to a plot.  Saves
 
     f, (ax1) = plt.subplots(1, 1)
     plt.grid(True)
@@ -221,20 +223,20 @@ if __name__ == "__main__":
 
     # whether to create and save a bar plot
     disp_bar = True
-
-    import sys
-
-    argv = sys.argv
-
-    if len(argv) < 2:
-        # run all of the demos
-        for key in DEMO_KEYS:
-            run_demo(key, disp_bar=disp_bar)
-    else:
-        key = argv[1]
-        if key not in DEMO_KEYS:
-            raise ValueError(
-                "first argument to run_demo.py must be one of {'food','company'}"
-            )
-        else:
-            run_demo(key, disp_bar=disp_bar)
+    run_demo("key", disp_bar=disp_bar)
+    # import sys
+    #
+    # argv = sys.argv
+    #
+    # if len(argv) < 2:
+    #     # run all of the demos
+    #     for key in DEMO_KEYS:
+    #         run_demo(key, disp_bar=disp_bar)
+    # else:
+    #     key = argv[1]
+    #     if key not in DEMO_KEYS:
+    #         raise ValueError(
+    #             "first argument to run_demo.py must be one of {'food','company'}"
+    #         )
+    #     else:
+    #         run_demo(key, disp_bar=disp_bar)
